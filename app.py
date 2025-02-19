@@ -8,7 +8,7 @@ import tempfile
 import os
 
 # Load the trained model
-MODEL_PATH = "my_model.keras"
+MODEL_PATH = "vgg16_model.h5"
 model = tf.keras.models.load_model(MODEL_PATH)
 
 # Define class labels
