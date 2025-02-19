@@ -49,7 +49,7 @@ st.write("Upload an image of a currency note, or take a picture with your camera
 
 # Option to upload a file or use the camera
 uploaded_file = st.file_uploader("Upload an Image", type=["jpg", "jpeg", "png"])
-
+camera_input = st.camera_input("Take a picture")
 # Check if an image is uploaded or captured from the camera
 if uploaded_file is not None:
     image_data = Image.open(uploaded_file)
